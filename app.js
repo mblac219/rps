@@ -10,8 +10,8 @@ function getComputerPlay() {
 console.log(getComputerPlay());
 
 const game = () => {
-  //for loop plays 5 rounds
-  for (let i = 1; i < 6; i++) {
+  //while loop plays 5 rounds
+  while (playerScore <= 4 && computerScore <= 4) {
     // function that plays a single round
     function playRound(playerSelection, computerSelection) {
       const player = playerSelection.toLowerCase();
@@ -20,16 +20,22 @@ const game = () => {
       if (player === computer) {
         return "It's a draw!";
       } else if (player == "rock" && computer == "scissors") {
+        playerScore += 1;
         return "You win! Rock beats Scissors";
       } else if (player == "scissors" && computer == "rock") {
+        computerScore += 1;
         return "Computer win! Rock beats Scissors";
       } else if (player == "paper" && computer == "rock") {
+        playerScore += 1;
         return "You win! Paper beats Rock";
       } else if (player == "rock" && computer == "paper") {
+        computerScore += 1;
         return "Computer win! Paper beats Rock";
       } else if (player == "scissors" && computer == "paper") {
+        playerScore += 1;
         return "You win! Scissors beat Paper";
       } else if (player == "paper" && computer == "scissors") {
+        computerScore += 1;
         return "Computer win! Scissors beat Paper";
       }
     }
@@ -43,3 +49,7 @@ const game = () => {
 };
 
 game();
+
+//log final score
+console.log(`You: ${playerScore}`);
+console.log(`Comp: ${computerScore}`);
