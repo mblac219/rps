@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #0e2245;
+}
+#score-container {
+  display: flex;
+  border-bottom: 2px solid #0a1220;
+}
+div#score {
+  margin-left: 50px;
+  flex: 1;
+}
+div#choose {
+  flex: 2;
+}
+div#choose > p {
+  margin-left: 25px;
+  font-size: 50px;
+}
+div > p {
+  color: #ecffb3;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 30px;
+}
+#btn-container {
+  display: flex;
+  justify-content: center;
+  background-color: #76777c;
+}
+button {
+  margin: 60px auto;
+  border-radius: 20px;
+  border: 2px solid #0a1220;
+}
+button:hover {
+  background-color: #4678be;
+  border: 2px solid #ecffb3;
+  /* margin: auto; */
+}
+#btn-1 {
+  background-color: rgb(67, 175, 199);
+}
+#btn-1:hover {
+  background-color: rgb(88, 185, 207);
+}
+#btn-2 {
+  background-color: rgb(152, 12, 12);
+}
+#btn-2:hover {
+  background-color: rgb(161, 29, 29);
+}
+#btn-3 {
+  background-color: rgb(253, 98, 8);
+}
+#btn-3:hover {
+  background-color: rgb(253, 113, 32);
+}
+img {
+  height: 450px;
+  width: 450px;
+}
+
+div#winner {
+  border-top: 2px solid #0a1220;
+}
+div#winner > p {
+  font-family: "Fira Sans", sans-serif;
+}
