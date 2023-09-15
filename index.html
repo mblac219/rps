@@ -11,31 +11,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <div id="score-container">
       <div id="score">
         <div id="player">
           <p>Player :</p>
-          <p id="p-score"></p>
+          <p id="playerScore">0</p>
         </div>
-        <div id="comp">
+        <div id="computer">
           <p>Computer :</p>
-          <p id="comp-score"></p>
+          <p id="computerScore">0</p>
         </div>
       </div>
-      <div id="choose"><p>Choose your move!</p></div>
+      <div id="choose"><p id="title">Choose your move!</p></div>
+      <div id="start">
+        <button id="restart">Start</button>
+      </div>
     </div>
     <div id="btn-container">
-      <button id="btn-1">
+      <button id="rock">
         <img src="./images/rock.png" alt="rock" />
       </button>
-      <button id="btn-2"><img src="./images/paper.png" alt="paper" /></button>
-      <button id="btn-3">
+      <button id="paper">
+        <img src="./images/paper.png" alt="paper" />
+      </button>
+      <button id="scissors">
         <img src="./images/scissors.png" alt="scissors" />
       </button>
     </div>
-    <div id="winner"><p></p></div>
-    <script src="app.js"></script>
+    <div><p id="winner"></p></div>
   </body>
 </html>

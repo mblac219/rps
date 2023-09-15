@@ -1,71 +1,118 @@
+/* border box-sizing */
 * {
   box-sizing: border-box;
 }
-
+/* adds the background color for entire page */
 html {
   background-color: #0e2245;
 }
+/* holds the header content  */
 #score-container {
   display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #0a1220;
 }
-div#score {
+/* player name and score styling */
+#player {
+  display: flex;
+}
+/* computer name and score styling */
+#computer {
+  display: flex;
+}
+/* styling for scoreboard */
+#score {
   margin-left: 50px;
   flex: 1;
 }
-div#choose {
+/* container for title */
+#choose {
   flex: 2;
 }
-div#choose > p {
-  margin-left: 25px;
-  font-size: 50px;
+/* styling for "Choose your move" */
+#title {
+  font-size: 48px;
+  margin-top: 50px;
+  text-align: center;
 }
+/* font styling */
 div > p {
   color: #ecffb3;
   font-family: "Fira Sans", sans-serif;
   font-size: 30px;
+  margin: 15px 10px;
 }
+/* start button container */
+#start {
+  flex: 1;
+}
+/* start button */
+#restart {
+  background-color: rgb(236, 108, 108);
+  color: white;
+  border-radius: 10px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  float: right;
+  margin-right: 50px;
+  width: 100px;
+  height: 50px;
+}
+/* start button color change */
+#restart:hover {
+  background-color: rgb(56, 196, 56);
+  color: black;
+  cursor: pointer;
+}
+/* container for player buttons */
 #btn-container {
   display: flex;
   justify-content: center;
   background-color: #76777c;
 }
+/* styling for buttons */
 button {
   margin: 60px auto;
   border-radius: 20px;
   border: 2px solid #0a1220;
 }
-button:hover {
-  background-color: #4678be;
-  border: 2px solid #ecffb3;
-  /* margin: auto; */
-}
-#btn-1 {
+/* rock button color bckgd  */
+#rock {
   background-color: rgb(67, 175, 199);
 }
-#btn-1:hover {
+#rock:hover {
   background-color: rgb(88, 185, 207);
+  border: 2px solid #ecffb3;
+  cursor: pointer;
 }
-#btn-2 {
+/* paper button color bckgd */
+#paper {
   background-color: rgb(152, 12, 12);
 }
-#btn-2:hover {
+#paper:hover {
   background-color: rgb(161, 29, 29);
+  border: 2px solid #ecffb3;
+  cursor: pointer;
 }
-#btn-3 {
+/* scissors button color bckgd */
+#scissors {
   background-color: rgb(253, 98, 8);
 }
-#btn-3:hover {
+#scissors:hover {
   background-color: rgb(253, 113, 32);
+  border: 2px solid #ecffb3;
+  cursor: pointer;
 }
+/* png images for buttons */
 img {
   height: 450px;
   width: 450px;
 }
-
-div#winner {
-  border-top: 2px solid #0a1220;
-}
-div#winner > p {
+/* font styling for results  */
+#winner {
   font-family: "Fira Sans", sans-serif;
+  padding-top: 25px;
+  font-size: 48px;
+  text-align: center;
+  justify-content: center;
 }
