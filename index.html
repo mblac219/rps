@@ -4,8 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <script src="app.js"></script>
+    <div id="score-container">
+      <div id="score">
+        <div id="player">
+          <p>Player :</p>
+          <p id="playerScore">0</p>
+        </div>
+        <div id="computer">
+          <p>Computer :</p>
+          <p id="computerScore">0</p>
+        </div>
+      </div>
+      <div id="choose"><p id="title">Choose your move!</p></div>
+      <div id="start">
+        <button id="restart">Start</button>
+      </div>
+    </div>
+    <div id="btn-container">
+      <button id="rock">
+        <img src="./images/rock.png" alt="rock" />
+      </button>
+      <button id="paper">
+        <img src="./images/paper.png" alt="paper" />
+      </button>
+      <button id="scissors">
+        <img src="./images/scissors.png" alt="scissors" />
+      </button>
+    </div>
+    <div><p id="winner"></p></div>
   </body>
 </html>
